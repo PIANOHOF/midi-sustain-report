@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "input": {
+    "name": "demo.mid",
+    "sha256": "4d2f5e93f3506fa0ccd8bab34ab96e4452476b33c747b60f43a6cac14cbfc383",
+    "bytes": 78
+  },
+  "scope": "CC64 threshold observations and CC121 reset markers; no receiver or hardware diagnosis",
+  "smf_type": 1,
+  "ticks_per_quarter_note": 480,
+  "default_tempo_microseconds_per_quarter": 500000,
+  "tempo_event_count": 2,
+  "tempo_events": [
+    {
+      "absolute_tick": 0,
+      "seconds": 0.0,
+      "track_index": 0,
+      "message_index": 0,
+      "microseconds_per_quarter": 500000
+    },
+    {
+      "absolute_tick": 480,
+      "seconds": 0.5,
+      "track_index": 0,
+      "message_index": 1,
+      "microseconds_per_quarter": 1000000
+    }
+  ],
+  "message_count": 9,
+  "end_tick": 960,
+  "duration_seconds": 1.5,
+  "display_order": [
+    "absolute_tick",
+    "track_index",
+    "message_index"
+  ],
+  "channel_numbers": "1..16; channels are shared across tracks, not one channel per track",
+  "seconds_rounding_decimal_places": 9,
+  "tracks": [
+    {
+      "track_index": 0,
+      "message_count": 3,
+      "end_tick": 960
+    },
+    {
+      "track_index": 1,
+      "message_count": 6,
+      "end_tick": 960
+    }
+  ],
+  "counts": {
+    "cc64_on": 2,
+    "cc64_off": 1,
+    "cc121_reset_markers": 1
+  },
+  "channels": [
+    {
+      "channel": 1,
+      "first_value_unknown_before_first_event": true,
+      "first_event_tick": 0,
+      "first_event_seconds": 0.0,
+      "observed_state_at_end": "on",
+      "active_at_end": true,
+      "end_state_reason": "last_observed_cc64",
+      "last_event_tick": 960
+    }
+  ],
+  "events": [
+    {
+      "absolute_tick": 0,
+      "track_index": 1,
+      "message_index": 0,
+      "channel": 1,
+      "controller": 64,
+      "value": 127,
+      "state": "on",
+      "meaning": "damper_pedal_threshold",
+      "seconds": 0.0,
+      "cross_track_order_ambiguous": false,
+      "logical_channel_state_after_tick": "on"
+    },
+    {
+      "absolute_tick": 480,
+      "track_index": 1,
+      "message_index": 2,
+      "channel": 1,
+      "controller": 64,
+      "value": 63,
+      "state": "off",
+      "meaning": "damper_pedal_threshold",
+      "seconds": 0.5,
+      "cross_track_order_ambiguous": false,
+      "logical_channel_state_after_tick": "off"
+    },
+    {
+      "absolute_tick": 720,
+      "track_index": 1,
+      "message_index": 3,
+      "channel": 1,
+      "controller": 121,
+      "value": 0,
+      "state": "unknown",
+      "meaning": "reset_requires_receiver_semantics",
+      "seconds": 1.0,
+      "cross_track_order_ambiguous": false,
+      "logical_channel_state_after_tick": "unknown"
+    },
+    {
+      "absolute_tick": 960,
+      "track_index": 1,
+      "message_index": 4,
+      "channel": 1,
+      "controller": 64,
+      "value": 64,
+      "state": "on",
+      "meaning": "damper_pedal_threshold",
+      "seconds": 1.5,
+      "cross_track_order_ambiguous": false,
+      "logical_channel_state_after_tick": "on"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "cc121_receiver_semantics",
+      "message": "CC121 wird protokolliert und setzt das Beobachtungsmodell auf unknown. Welche Controller der konkrete Empfänger zurücksetzt, wird nicht behauptet."
+    }
+  ]
+}
