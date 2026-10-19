@@ -1,0 +1,21 @@
+site_name: MIDI Sustain Report
+site_description: Nachvollziehbare Dokumentation der lokalen MIT-CLI für CC64/CC121 in Standard-MIDI-Dateien.
+repo_url: https://github.com/PIANOHOF/midi-sustain-report
+repo_name: PIANOHOF/midi-sustain-report
+edit_uri: ''
+use_directory_urls: true
+theme:
+  name: readthedocs
+  locale: de
+  highlightjs: false
+nav:
+  - Anleitung und Grenzen: index.md
+plugins:
+  - search:
+      lang: de
+markdown_extensions:
+  - tables
+  - fenced_code
+extra_css:
+  - assets/pianohof.css
+copyright: 'PIANOHOF · Code und Dokumentation MIT; Lato SIL OFL 1.1.'
