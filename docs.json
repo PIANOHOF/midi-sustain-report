@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.page/schema.json",
+  "name": "MIDI Sustain Report",
+  "description": "Lokales Python-Werkzeug: Sustain-Controller CC64 und Reset-Ereignisse in MIDI-Dateien prüfen. Mit deutschen Erklärungen, Beispieldatei und Tests; ohne MIDI-Ausgabe oder Upload.",
+  "sidebar": [
+    {
+      "group": "Dokumentation",
+      "pages": [
+        {
+          "title": "MIDI Sustain Report",
+          "href": "/"
+        }
+      ]
+    }
+  ],
+  "social": {
+    "website": "https://www.pianohof.de/",
+    "github": "https://github.com/PIANOHOF/midi-sustain-report"
+  },
+  "mcp": {
+    "enabled": false
+  }
+}
